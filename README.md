@@ -1,4 +1,25 @@
 # c-Version-Text-Adventure
+
+## UML
+
+classDiagram
+    Main <|-- Menu
+    Main <|-- Room
+    Main : -int main()
+    Main : -int choice
+
+    class Menu{
+      -void show_menu()
+      -static int first_time
+      -static int rest_time
+    }
+    class Room{
+      -void initRoom()
+      -void enter_room()
+      -room_visited
+    }
+
+
 ## About
 
 I want to put my about section here since I realized it isnt going to work to have it in the game itself
@@ -9,6 +30,8 @@ As of writing this, I am having a bunch of trouble figuring out how to get the m
 edit: it works!! I'm so happy!
 
 I ended up deciding to switch from java to c in the end. I like java, but it was just way to much setup just to type out a simple description. C, also, reminds me a little bit about python which is a language I am very comfortable in. I figured I would have more fun figuring c out than java, so despite the review I had to do I decided it would be better to swap.
+
+I also just realized that the underscore naming conventions I used last year work for this code. For some reason, I thought this whole semester that I had to follow the "exampleTest" naming convention rather than "example_test", which fueled my confusion. I switched back for this, now knowing it doesn't really influence anything.
 
 I'm still learning as I go, and there will definitely be a part where the code becomes unusable... but maybe the story in the code I'm trying to make is at least a little interesting?
 
